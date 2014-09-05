@@ -1,1 +1,1 @@
-include <dibond_config.scad>
+include <mymendel_config.scad>
