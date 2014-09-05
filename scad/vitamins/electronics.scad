@@ -17,6 +17,8 @@ Sanguinololu = ["SANGUINOL: Sanguinolou electronics", 4   * 25.4,    2 * 25.4, 1
 Melzi =        ["MELZI: Melzi electronics",           8.2 * 25.4, 1.95 * 25.4, 1.5 * 2.54, ["USBLEAD: USB A to Mini B lead",
                                                                                                  "SDCARD: Micro SD card",
                                                                                                  "SDUSB: Micro SD to USB adapter"]];
+RAMPS =		   ["RAMPS 1.4",						  102,		60,          ,   1.5 * 2.54, []];                                                                                    
+                                                                                             
 
 function controller_name(type)        = type[0];
 function controller_length(type)      = type[1];
