@@ -85,3 +85,7 @@ frame_thick_screw = M4_pan_screw;           // Used with tapped holes when sheet
 //
 default_wall = 3;
 thick_wall = 4;
+
+layer_height = 0.2;
+
+//light_strip = true;
