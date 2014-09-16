@@ -17,7 +17,7 @@ Sanguinololu = ["SANGUINOL: Sanguinolou electronics", 4   * 25.4,    2 * 25.4, 1
 Melzi =        ["MELZI: Melzi electronics",           8.2 * 25.4, 1.95 * 25.4, 1.5 * 2.54, ["USBLEAD: USB A to Mini B lead",
                                                                                                  "SDCARD: Micro SD card",
                                                                                                  "SDUSB: Micro SD to USB adapter"]];
-RAMPS =		   ["RAMPS 1.4",						  102,		60,          ,   1.5 * 2.54, []];                                                                                    
+RAMPS =		   ["RAMPS 1.4",						  4000 * 0.0254,		2100 * 0.0254,    1.5 * 2.54, []];                                                                                    
                                                                                              
 
 function controller_name(type)        = type[0];
@@ -29,11 +29,40 @@ function controller_accessories(type) = type[4];
 module controller_screw_positions(type) {
     inset = controller_hole_inset(type);
 
-    for($i = [0:3])
-        assign(x = [inset, controller_width(type) - inset][$i % 2])
-        assign(y = [inset, controller_length(type) - inset][$i / 2])
-            translate([x, y, 0])
-                child();
+
+// http://www.wayneandlayne.com/files/common/arduino_mega_drawing.svg
+// Sorry, no clue how to do it elegantly (and too lazy  ;) ) 
+	if(type == RAMPS){
+		//TOP
+		translate([100 * 0.0254, 600 * 0.0254, 0])
+			child();
+			
+		translate([100 * 0.0254, 3550 * 0.0254, 0])
+			child();
+			
+			
+		//Bottom	
+		translate([2000 * 0.0254, 550 * 0.0254, 0])
+			child();			
+
+			
+		translate([2000 * 0.0254, 3800 * 0.0254, 0])
+			child();
+			
+		//Middle
+		translate([700 * 0.0254, 2600 * 0.0254, 0])
+			child();
+			
+		translate([1800 * 0.0254, 2600 * 0.0254, 0])
+			child();
+	}
+	else {
+		for($i = [0:3])
+			assign(x = [inset, controller_width(type) - inset][$i % 2])
+			assign(y = [inset, controller_length(type) - inset][$i / 2])
+				translate([x, y, 0])
+					child();
+		}
 }
 
 module controller(type) {
