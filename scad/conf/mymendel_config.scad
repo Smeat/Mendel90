@@ -31,16 +31,14 @@ bed_thickness = pcb_thickness + sheet_thickness(bed_glass);    // PCB heater plu
 bed_holes = [209, 209];
 
 base = MDF12;               // Sheet material used for the base. Needs to be thick enough to screw into.
-base_corners = 0;
+base_corners = 25;
 
 frame = MDF12;
-frame_corners = 0;
+frame_corners = 25;
 frame_nuts = false;
 
-case_fan = fan80x38;
-//psu = KY240W;
+case_fan = false;
 psu = ATX500;
-//controller = Sanguinololu;
 controller = RAMPS;
 
 raspberry_pi = true;
@@ -48,13 +46,14 @@ raspberry_pi_camera = true;
 pulley_type = GT2x20_metal_pulley;
 
 spool = spool_300x85;
+//spool = false;
 bottom_limit_switch = false;
 top_limit_switch = true;
 
 single_piece_frame = true;
 stays_from_window = false;
 
-Y_carriage = MDF6;
+Y_carriage = DiBond;
 
 X_belt = GT2;
 Y_belt = GT2;
@@ -88,4 +87,4 @@ thick_wall = 4;
 
 layer_height = 0.2;
 
-//light_strip = true;
+light_strip = SPS125;
