@@ -1,8 +1,8 @@
 bed_fan_assembly:
 Vitamins:
-  4 Nyloc nut Mundef
-  4 Washer Mundef x undefmm x undefmm
-  4 undef x 10mm
+  4 M4 cap screw x 25mm
+  4 Nyloc nut M4
+  4 Washer M4 x 9mm x 0.8mm
 
 Printed:
   1 fan_guard.stl

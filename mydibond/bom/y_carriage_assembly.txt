@@ -2,7 +2,7 @@ y_carriage_assembly:
 Vitamins:
  14 M3 cap screw x 16mm
   2 M3 cap screw x 20mm
-  1 Dibond sheet 216mm x 216mm x 3mm
+  1 Dibond sheet 217mm x 217mm x 3mm
   3 LM8UU linear bearing
  16 Nyloc nut M3
  22 Washer M3 x 7mm x 0.5mm

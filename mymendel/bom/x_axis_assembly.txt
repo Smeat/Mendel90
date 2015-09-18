@@ -1,7 +1,12 @@
 x_axis_assembly:
 Vitamins:
+<<<<<<< HEAD:mymendel/bom/x_axis_assembly.txt
   1 Belt T2 x 6mm x 866mm
   2 Smooth rod 8mm x 385mm
+=======
+  1 Belt T2 x 6mm x 904mm
+  2 Smooth rod 10mm x 403mm
+>>>>>>> d53af327c84c5429adc220c5dcd1d16b85a20a07:sturdy/bom/x_axis_assembly.txt
   2 Wingnut M4
 
 Printed:

@@ -64,8 +64,8 @@ Y_belt = GT2;
 motor_shaft = 5;
 Z_screw_dia = 8;            // Studding for Z axis
 
-Y_carriage_depth = bed_holes[1] + 7;
-Y_carriage_width = bed_holes[0] + 7;
+Y_carriage_depth = bed_holes[1] + 8;
+Y_carriage_width = bed_holes[0] + 8;
 
 Z_nut_radius = M8_nut_radius;
 Z_nut_depth = M8_nut_depth;

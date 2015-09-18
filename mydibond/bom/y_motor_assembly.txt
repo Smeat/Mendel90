@@ -1,7 +1,11 @@
 y_motor_assembly:
 Vitamins:
   4 M4 cap screw x 16mm
+<<<<<<< HEAD:mydibond/bom/y_motor_assembly.txt
   1 M3 grub screw x 6mm
+=======
+  2 M3 grub screw x 6mm
+>>>>>>> d53af327c84c5429adc220c5dcd1d16b85a20a07:dibond/bom/y_motor_assembly.txt
   1 NEMA17 x 47mm stepper motor
   4 Nyloc nut M4
   4 M3 pan screw x 8mm

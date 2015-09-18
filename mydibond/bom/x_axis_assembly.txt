@@ -1,6 +1,10 @@
 x_axis_assembly:
 Vitamins:
+<<<<<<< HEAD:mydibond/bom/x_axis_assembly.txt
   1 Belt T2 x 6mm x 866mm
+=======
+  1 Belt T2 x 6mm x 868mm
+>>>>>>> d53af327c84c5429adc220c5dcd1d16b85a20a07:mendel/bom/x_axis_assembly.txt
   2 Smooth rod 8mm x 385mm
   2 Wingnut M4
 

@@ -1,6 +1,10 @@
 y_axis_assembly:
 Vitamins:
+<<<<<<< HEAD:mydibond/bom/y_axis_assembly.txt
   1 Belt T2 x 6mm x 652mm
+=======
+  1 Belt T2 x 6mm x 662mm
+>>>>>>> d53af327c84c5429adc220c5dcd1d16b85a20a07:dibond/bom/y_axis_assembly.txt
   4 M3 cap screw x 16mm
   8 M4 cap screw x 16mm
   4 Nyloc nut M3

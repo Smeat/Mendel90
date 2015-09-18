@@ -6,8 +6,8 @@ Vitamins:
   4 M3 cap screw x 10mm
   1 Glass sheet 214mm x 202mm x 2mm
   4 Hex male / female pillar M3 x 20mm
-  1 Polypropylene strip 271mm x 33mm x 0.5mm
-  1 Ribbon cable 26 way 381mm
+  1 Polypropylene strip 278mm x 33mm x 0.5mm
+  1 Ribbon cable 26 way 388mm
   2 Heatshrink sleeving ID 1.6mm x 15mm
   2 Heatshrink sleeving ID 2.4mm x 15mm
   2 Heatshrink sleeving ID 6.4mm x 30mm

@@ -4,7 +4,11 @@ Vitamins:
  10 M3 cap screw x 20mm
   2 M3 cap screw x 45mm
   1 15 way D IDC socket
+<<<<<<< HEAD:mymendel/bom/x_motor_assembly.txt
   1 M3 grub screw x 6mm
+=======
+  2 M3 grub screw x 6mm
+>>>>>>> d53af327c84c5429adc220c5dcd1d16b85a20a07:dibond/bom/x_motor_assembly.txt
   2 LM8UU linear bearing
   1 NEMA17 x 47mm stepper motor
  14 Nyloc nut M3
@@ -14,7 +18,11 @@ Vitamins:
   2 M3 pan screw x 8mm
   4 No2 pan wood screw x 13mm
   1 GT2 pulley 20 teeth
+<<<<<<< HEAD:mymendel/bom/x_motor_assembly.txt
   1 Ribbon cable 20 way 1242mm
+=======
+  1 Ribbon cable 20 way 1220mm
+>>>>>>> d53af327c84c5429adc220c5dcd1d16b85a20a07:dibond/bom/x_motor_assembly.txt
   1 Microswitch
   4 Heatshrink sleeving ID 2.4mm x 15mm
   4 Washer M2.5 x 5.9mm x 0.5mm

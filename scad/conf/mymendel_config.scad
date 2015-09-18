@@ -19,8 +19,8 @@ Z_motor = NEMA17;
 
 hot_end = StoffelV2;
 
-X_travel = 200;
-Y_travel = 200;
+X_travel = 214;
+Y_travel = 214;
 Z_travel = 200;
 
 bed_depth = 214;
@@ -37,21 +37,23 @@ frame = MDF12;
 frame_corners = 25;
 frame_nuts = false;
 
-case_fan = false;
+case_fan = fan80x38;
 psu = ATX500;
 controller = RAMPS;
 
-raspberry_pi = true;
-raspberry_pi_camera = true;
+
 pulley_type = GT2x20_metal_pulley;
 
 spool = spool_300x85;
-//spool = false;
 bottom_limit_switch = false;
 top_limit_switch = true;
 
 single_piece_frame = true;
 stays_from_window = false;
+cnc_sheets = false;                 // If sheets are cut by CNC we can use slots, etc instead of just round holes
+raspberry_pi = true;
+raspberry_pi_camera = true;
+light_strip = SPS125;
 
 Y_carriage = DiBond;
 
@@ -86,5 +88,3 @@ default_wall = 3;
 thick_wall = 4;
 
 layer_height = 0.2;
-
-light_strip = SPS125;
