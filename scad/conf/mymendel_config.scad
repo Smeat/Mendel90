@@ -19,8 +19,8 @@ Z_motor = NEMA17;
 
 hot_end = StoffelV2;
 
-X_travel = 214;
-Y_travel = 214;
+X_travel = 200;
+Y_travel = 200;
 Z_travel = 200;
 
 bed_depth = 214;
@@ -31,10 +31,10 @@ bed_thickness = pcb_thickness + sheet_thickness(bed_glass);    // PCB heater plu
 bed_holes = [209, 209];
 
 base = MDF12;               // Sheet material used for the base. Needs to be thick enough to screw into.
-base_corners = 25;
+base_corners = 0;
 
 frame = MDF12;
-frame_corners = 25;
+frame_corners = 0;
 frame_nuts = false;
 
 case_fan = fan80x38;
@@ -45,7 +45,7 @@ controller = RAMPS;
 pulley_type = GT2x20_metal_pulley;
 
 spool = spool_300x85;
-bottom_limit_switch = false;
+bottom_limit_switch = true;
 top_limit_switch = true;
 
 single_piece_frame = true;
@@ -55,10 +55,10 @@ raspberry_pi = true;
 raspberry_pi_camera = true;
 light_strip = SPS125;
 
-Y_carriage = DiBond;
+Y_carriage = MDF6;
 
-X_belt = GT2;
-Y_belt = GT2;
+X_belt = GT2x6;
+Y_belt = GT2x6;
 
 motor_shaft = 5;
 Z_screw_dia = 8;            // Studding for Z axis
