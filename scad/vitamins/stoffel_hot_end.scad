@@ -89,3 +89,5 @@ module stoffel_hot_end(type) {
 
     }
 }
+
+stoffel_hot_end(StoffelV2);
