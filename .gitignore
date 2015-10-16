@@ -9,3 +9,6 @@ gcode
 *.g*
 dummy.csg
 Thumbs.db
+mendel/
+dibond/
+mymendel/
