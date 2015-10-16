@@ -1,8 +1,0 @@
-hot_end_assembly:
-Vitamins:
-  1 aluminium heater block 15mm x 15mm x 8mm
-  1 Stoffle15 hot end, 10mm insulator
-  1 RWM04106R80J 6R8 3W vitreous enamel resistor
-
-Printed:
-
