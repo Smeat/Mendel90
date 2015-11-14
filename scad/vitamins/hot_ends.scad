@@ -25,7 +25,7 @@ e3dv6 =               [e3d,     "E3D V6 3mm direct",            62, 3.7,        
 e3dv5 =               [e3d,     "E3D V5 3mm direct",            70, 3.7,         16,  50.1, "lightgrey",  12,       true,    6,        15, [1, 5, -5], 15, 31];
 e3d_clone =           [e3d,     "E3D clone aliexpress",         66, 6.8,         16,    46, "lightgrey",  12,       true,  5.6,        15, [1, 5, -5], 15, 25];
 
-StoffelV2 = [Stoffel, "HEST10340: Stoffle15 hot end, 10mm insulator", 73, 13, 10, 32, "tan", 5, false, 14, [0, 2.38, 5]];
+StoffelV2 = [Stoffel, "HEST10340: Stoffel15 hot end, 10mm insulator", 74, 13, 10, 32, "tan", 5, false,  6,        16, [1, 5, -4], 20, 20];
 
 
 function hot_end_style(type)              = type[0];

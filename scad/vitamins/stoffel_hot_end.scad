@@ -1,50 +1,71 @@
 //
 // Mendel90
 //
-// nop.head@gmail.com
-// hydraraptor.blogspot.com
-//
+
 include <../conf/config.scad>
 
-heater_width = 15;
-heater_length = 15;
-heater_height = 8;
-
-resistor_x = heater_length / 2 - 4.5;
-
-thermistor_x = heater_length / 2 - 8.5;
-thermistor_z = -heater_height / 2 + 6;
-
-nozzle_x = -heater_length / 2 + 4.5;
-barrel_tap_dia = 5;
-
-barrel_dia = 6;
-insulator_dia = 12;
 
 
-module heater_block(resistor, thermistor) {
-    vitamin(str("HEATBLK: aluminium heater block ", heater_length, "mm x ", heater_width, "mm x ", heater_height, "mm"));
-    color([0.7, 0.7, 0.7]) render() difference() {
-        cube([heater_length, heater_width, heater_height], center = true);
+nozzle_h = 5;
 
-        translate([thermistor_x, 0, thermistor_z])                                      // hole for thermistor
-            rotate([90, 0, 0])
-                cylinder(r = resistor_hole(thermistor) / 2, h = heater_width + 1, center = true);
+resistor_len = 22;
+resistor_dia = 6;
 
-        translate([resistor_x, 0, 0])                                                   // hole for resistor
-            rotate([90, 0, 0])
-                cylinder(r = resistor_hole(resistor) / 2, h = heater_width + 1, center = true);
+heater_width  = 16;
+heater_length = 20;
+heater_height = 11.5;
 
-        translate([nozzle_x, 0, 0])
-            cylinder(r = barrel_tap_dia / 2, h = heater_height+ 1, center = true);
+heater_x = 4.5;
+heater_y = heater_width / 2;
+
+
+
+module stoffelv2_nozzle(type) {
+    color("gold")
+    difference() {
+        union() {
+            //cylinder(r1=1.3/2, r2=3/2, h=2);
+            translate([0, 0, 2]) cylinder(r = 8/2, h=nozzle_h-2, $fn=6);
+        }
+       // translate([0, 0, -eta]) cylinder(r =0.5 / 2, h=nozzle_h+ 2*eta);
+    }
+}
+
+
+module stoffelv2_resistor(type) {
+    translate([11-heater_x, -3-heater_y, heater_height/2+nozzle_h]) {
+        color("grey") rotate([-90, 0, 0]) cylinder(r=resistor_dia / 2, h=resistor_len);
+        color("red") translate([-3.5/2, resistor_len  + 3.5/2  +1, 0]) {
+            cylinder(r=3.5 / 2, h=36);
+            translate([3.5, 0, 0]) cylinder(r=3.5 / 2, h=36);
+        }
+
+
+    }
+}
+
+module heater_block(type) {
+    translate([0, 0, -hot_end_length(type)])  {
+        translate([0, 0, nozzle_h]) difference() {
+            color("lightgrey") union() {
+                // Heat break
+                cylinder(r=2, h=heater_height + 10);
+                translate([-heater_x, -heater_y, 0])  {
+                    cube([heater_length, heater_width, heater_height]);
+                }
+            }
+            //cylinder(r=3/ 2, h=heater_height + 10 + eta); // Filament hole
+        }
+
+        stoffelv2_resistor(type);
+        stoffelv2_nozzle(type);
     }
 }
 
 
 
+
 module stoffel_hot_end(type) {
-    resistor = RWM04106R80J;
-    thermistor = Honewell;
     insulator_length = hot_end_insulator_length(type);
     inset = hot_end_inset(type);
     barrel_length = hot_end_total_length(type) - insulator_length;
@@ -75,18 +96,7 @@ module stoffel_hot_end(type) {
     }
     rotate([0, 0, 90])
         translate([-nozzle_x, 0, -hot_end_length(type) + 10 -heater_height / 2]) {
-            heater_block(resistor, thermistor);
-
-            explode([0, -15, 0])
-                translate([resistor_x, 0, 0])
-                    rotate([90, 0, 0])
-                        resistor(resistor);
-
-            explode([0, -15, 0])
-                translate([thermistor_x, 0, thermistor_z])
-                    rotate([90, 0, 0])
-                        thermistor(thermistor);
-
+            heater_block(StoffelV2);
     }
 }
 
