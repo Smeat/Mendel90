@@ -9,7 +9,7 @@
 //
 M2_nut    =   [2, 4.9, 1.6, 2.4,  M2_washer,     M2_nut_trap_depth];
 M2p5_nut  = [2.5, 5.8, 2.2, 3.8,  M2p5_washer, M2p5_nut_trap_depth];
-M3_nut      = [3, 6.4, 2.4, 4,    M3_washer,     M3_nut_trap_depth];
+M3_nut      = [3, 6.4 + 0.2, 2.4, 4,    M3_washer,     M3_nut_trap_depth];
 M4_nut      = [4, 8.1, 3.2, 5,    M4_washer,     M4_nut_trap_depth];
 M5_nut      = [5, 9.2,   4, 6.25, M5_washer,     M5_nut_depth];
 M6_nut      = [6, 11.5,  5, 8,    M6_washer,     M6_nut_depth];
